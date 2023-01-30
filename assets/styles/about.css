@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --black: #091744;
+    --gray: #1f3065;
+    --light-gray: #9fa5d6;
+    --turquoise: #14f1d9;
+    --red: #F2495F;
+    --blue: #3B7EEA;
+
+    --background-color: var(--black);
+    --font-color: #FFF;
+
+    --border-radius: 10px;
+    --content-font-size: 1.5em;
+    --button-vertical-padding: 10px;
+    --button-horizontal-padding: 15px;
+
+    --default-font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font-family);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content-col {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.logo-header {
+    user-select: none;
+    color: #FFFFFF;
+}
+
+.about-paragraph {
+    padding: 0 30px;
+}
+
+.about-subtitle {
+    font-size: 24px;
+}
+
+.about-text {
+    font-size: 18px;
+}
+
+.about-email {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--gray);
+    color: var(--light-gray);
+    border-radius: 10px;
+    padding: 15px 40px;
+    margin-top: 20px;
+}
